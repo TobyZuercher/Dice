@@ -32,8 +32,8 @@ void draw()
     }
   }
   fill(0);
-  text("The combined value is " + jim.diceValue, 50, 475, 2);
-  text("The total amount of rolls is " + jim.diceRolls, 275, 475, 2);
+  text("The combined value is " + jim.diceValue, 50, 475);
+  text("The total amount of rolls is " + jim.diceRolls, 275, 475);
 }
 
 void mouseClicked()
