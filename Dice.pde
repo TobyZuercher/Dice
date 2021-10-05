@@ -4,7 +4,7 @@ void setup()
 {
   colorMode(HSB, 360, 100, 100);
   size(500, 500, P3D);
-  camera(width - 25, height, (height/2.0) / tan(PI*30.0 / 180.0) - 100, width/2.0 + 25, height/2.0 + 20, 0, 0, 1, 0); //modified
+  camera(width - 25, height, (height/2.0) / tan(PI*30.0 / 180.0) - 100, width/2.0 + 25, height/2.0 + 20, 0); //modified
   background(0, 0, 80);
   jim = new Die(47);
   noLoop();
