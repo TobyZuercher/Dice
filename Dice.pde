@@ -32,8 +32,12 @@ void draw()
     }
   }
   fill(0);
+  translate(0, 0, 100);
+  rotateX(-PI/6);
+  rotateY(PI/6);
   text("The combined value is " + jim.diceValue, 50, 475);
-  text("The total amount of rolls is " + jim.diceRolls, 275, 475);
+  //text("The total amount of rolls is " + jim.diceRolls, 275, 475);
+  translate(0, 0, -100);
 }
 
 void mouseClicked()
