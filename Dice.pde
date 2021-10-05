@@ -3,7 +3,7 @@ Die jim;
 void setup()
 {
   colorMode(HSB, 360, 100, 100);
-  size(600, 600, P3D);
+  size(500, 500, P3D);
   background(0, 0, 80);
   jim = new Die(47);
   noLoop();
