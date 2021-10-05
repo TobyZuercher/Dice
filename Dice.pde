@@ -33,6 +33,8 @@ void draw()
   }
   println("The combined value is " + jim.diceValue);
   println("The total amount of rolls is " + jim.diceRolls);
+  for(int p = 0; p < 5; p++)
+  println();
 }
 
 void mouseClicked()
