@@ -31,8 +31,8 @@ void draw()
       jim.place(x, y);
     }
   }
-  System.println("The combined value is " + jim.diceValue);
-  System.println("The total amount of rolls is " + jim.diceRolls);
+  println("The combined value is " + jim.diceValue);
+  println("The total amount of rolls is " + jim.diceRolls);
 }
 
 void mouseClicked()
