@@ -4,7 +4,6 @@ void setup()
 {
   colorMode(HSB, 360, 100, 100);
   size(500, 500, P3D);
-  camera(width - 25, height, (height/2.0) / tan(PI*30.0 / 180.0) - 100, width/2.0 + 25, height/2.0 + 20, 0); //modified
   background(0, 0, 80);
   jim = new Die(47);
   noLoop();
@@ -13,6 +12,10 @@ void setup()
 
 void draw()
 {
+  translate(250, 250, -(height/2.0) / tan(PI*30.0 / 180.0) + 375);
+  rotateX(PI/6);
+  rotateY(-PI/6);
+  translate(-275, -250);
   noStroke();
   fill(0, 0, 80);
   rect(-1500, -1500, 4500, 4500);
@@ -29,8 +32,8 @@ void draw()
     }
   }
   fill(0);
-  text("The combined value is " + jim.diceValue, 75, 475, 2);
-  text("The total amount of rolls is " + jim.diceRolls, 290, 475, 2);
+  text("The combined value is " + jim.diceValue, 50, 475, 2);
+  text("The total amount of rolls is " + jim.diceRolls, 275, 475, 2);
 }
 
 void mouseClicked()
